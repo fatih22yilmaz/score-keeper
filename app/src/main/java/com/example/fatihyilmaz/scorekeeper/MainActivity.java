@@ -9,6 +9,8 @@ public class MainActivity extends AppCompatActivity {
 
     int scoreA = 0;
     int scoreB = 0;
+    int foulA = 0;
+    int foulB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +34,32 @@ public class MainActivity extends AppCompatActivity {
     public void resetScores(View view) {
         scoreA = 0;
         scoreB = 0;
+        foulA = 0;
+        foulB = 0;
 
-        TextView textViewA = findViewById(R.id.scoreTeamA);
-        textViewA.setText("" + scoreA);
+        TextView textViewScoreA = findViewById(R.id.scoreTeamA);
+        textViewScoreA.setText("" + scoreA);
 
-        TextView textViewB = findViewById(R.id.scoreTeamB);
-        textViewB.setText("" + scoreB);
+        TextView textViewScoreB = findViewById(R.id.scoreTeamB);
+        textViewScoreB.setText("" + scoreB);
 
+        TextView textViewFoulA = findViewById(R.id.foulTeamA);
+        textViewFoulA.setText("" + foulA);
+
+        TextView textViewFoulB = findViewById(R.id.foulTeamB);
+        textViewFoulB.setText("" + foulB);
+
+    }
+
+    public void foulForTeamA(View view) {
+        foulA += 1;
+        TextView textViewFoulA = findViewById(R.id.foulTeamA);
+        textViewFoulA.setText("" + foulA);
+    }
+
+    public void foulForTeamB(View view) {
+        foulB += 1;
+        TextView textViewFoulB = findViewById(R.id.foulTeamB);
+        textViewFoulB.setText("" + foulB);
     }
 }
