@@ -3,4 +3,40 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--Left Team Name Text View-->
+    <color name="leftTeamNameTextView_textColor">@android:color/black</color>
+
+    <!--Left Goal Button-->
+    <color name="leftGoalButton_textColor">@android:color/black</color>
+
+    <!--Left Foul Button-->
+    <color name="leftFoulButton_textColor">@android:color/black</color>
+
+    <!--Left Foul Text View-->
+    <color name="leftFoulTextView_textColor">@android:color/black</color>
+
+    <!--Left Goal Text View-->
+    <color name="leftGoalTextView_textColor">@android:color/black</color>
+
+    <!--Reset Button-->
+    <color name="resetButton_background">@android:color/darker_gray</color>
+
+
+    <!--Right Team Name Text View-->
+    <color name="rightTeamNameTextView_textColor">@android:color/black</color>
+
+    <!--Right Goal Button-->
+    <color name="rightGoalButton_textColor">@android:color/black</color>
+
+    <!--Right Foul Button-->
+    <color name="rightFoulButton_textColor">@android:color/black</color>
+
+    <!--Right Foul Text View-->
+    <color name="rightFoulTextView_textColor">@android:color/black</color>
+
+    <!--Right Goal Text View-->
+    <color name="rightGoalTextView_textColor">@android:color/black</color>
+
+
 </resources>

@@ -8,4 +8,171 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Relative Layout Container of the whole layout-->
+    <style name="ContainerRelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--Image View-->
+    <style name="ImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/football_court_yatay</item>
+    </style>
+
+    <!--Left Container Layout-->
+    <style name="leftContainerLinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--Left Inner Layout-->
+    <style name="leftInnerLinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--Left Team Name Text View-->
+    <style name="leftTeamNameTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/leftTeamNameTextView_Layout_marginLeft</item>
+        <item name="android:layout_marginStart">@dimen/leftTeamNameTextView_Layout_marginStart
+        </item>
+        <item name="android:layout_marginTop">@dimen/leftTeamNameTextView_Layout_marginTop</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/leftTeamNameTextView_textColor</item>
+        <item name="android:textSize">@dimen/leftTeamNameTextView_textSize</item>
+    </style>
+
+    <!--Left Goal Button-->
+    <style name="leftGoalButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/leftGoalButton_Layout_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/leftGoalButton_Layout_marginTop</item>
+        <item name="android:padding">@dimen/leftGoalButton_padding</item>
+        <item name="android:textColor">@color/leftGoalButton_textColor</item>
+        <item name="android:textSize">@dimen/leftGoalButton_textSize</item>
+    </style>
+
+    <!--Left Foul Button-->
+    <style name="leftFoulButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/leftFoulButton_Layout_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/leftFoulButton_Layout_marginTop</item>
+        <item name="android:padding">@dimen/leftFoulButton_padding</item>
+        <item name="android:textColor">@color/leftFoulButton_textColor</item>
+        <item name="android:textSize">@dimen/leftFoulButton_textSize</item>
+    </style>
+
+    <!--Left Foul Text View-->
+    <style name="leftFoulTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/leftFoulTextView_Layout_marginLeft</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/leftFoulTextView_textColor</item>
+        <item name="android:textSize">@dimen/leftFoulTextview_textSize</item>
+    </style>
+
+    <!--Left Goal Text View-->
+    <style name="leftGoalTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/leftGoalTextView_Layout_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/leftGoalTextView_Layout_marginTop</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/leftGoalTextView_textColor</item>
+        <item name="android:textSize">@dimen/leftGoalTextview_textSize</item>
+    </style>
+
+    <!--Reset Button-->
+    <style name="resetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/resetButton_background</item>
+        <item name="android:padding">@dimen/resetButton_padding</item>
+        <item name="android:textSize">@dimen/resetButton_textSize</item>
+    </style>
+
+    <!--Right Container Layout-->
+    <style name="rightContainerLinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--Right Inner Layout-->
+    <style name="rightInnerLinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--Right Team Name Text View-->
+    <style name="rightTeamNameTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/rightTeamNameTextView_Layout_marginRight
+        </item>
+        <item name="android:layout_marginTop">@dimen/rightTeamNameTextView_Layout_marginTop</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/rightTeamNameTextView_textColor</item>
+        <item name="android:textSize">@dimen/rightTeamNameTextView_textSize</item>
+    </style>
+
+    <!--Right Goal Button-->
+    <style name="rightGoalButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/rightGoalButton_Layout_marginRight</item>
+        <item name="android:layout_marginTop">@dimen/rightGoalButton_Layout_marginTop</item>
+        <item name="android:padding">@dimen/rightGoalButton_padding</item>
+        <item name="android:textColor">@color/rightGoalButton_textColor</item>
+        <item name="android:textSize">@dimen/rightGoalButton_textSize</item>
+    </style>
+
+    <!--Right Foul Button-->
+    <style name="rightFoulButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/rightFoulButton_Layout_marginRight</item>
+        <item name="android:layout_marginTop">@dimen/rightFoulButton_Layout_marginTop</item>
+        <item name="android:padding">@dimen/rightFoulButton_padding</item>
+        <item name="android:textColor">@color/rightFoulButton_textColor</item>
+        <item name="android:textSize">@dimen/rightFoulButton_textSize</item>
+    </style>
+
+    <!--Right Foul Text View-->
+    <style name="rightFoulTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/rightFoulTextView_Layout_marginLeft</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/rightFoulTextView_textColor</item>
+        <item name="android:textSize">@dimen/rightFoulTextview_textSize</item>
+    </style>
+
+    <!--Right Goal Text View-->
+    <style name="rightGoalTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/rightGoalTextView_Layout_marginRight</item>
+        <item name="android:layout_marginTop">@dimen/rightGoalTextView_Layout_marginTop</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/rightGoalTextView_textColor</item>
+        <item name="android:textSize">@dimen/rightGoalTextview_textSize</item>
+    </style>
+
+
 </resources>

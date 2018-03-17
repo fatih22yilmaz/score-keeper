@@ -1,162 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/ContainerRelativeLayout"
     tools:context="com.example.fatihyilmaz.scorekeeper.MainActivity">
 
+    <!--Image View-->
+    <ImageView style="@style/ImageView" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/football_court_yatay" />
+    <!--Left Container Layout-->
+    <LinearLayout style="@style/leftContainerLinearLayout">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:orientation="horizontal">
+        <!--Left Inner Layout-->
+        <LinearLayout style="@style/leftInnerLinearLayout">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
+            <!--Left Team Name Text View-->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="50dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Team A"
-                android:textColor="@android:color/black"
-                android:textSize="28sp" />
+                style="@style/leftTeamNameTextView"
+                android:text="@string/team_a" />
 
+            <!--Left Goal Button-->
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="54dp"
-                android:layout_marginTop="58dp"
+                style="@style/leftGoalButton"
                 android:onClick="goalForTeamB"
-                android:padding="5dp"
-                android:text="Goal"
-                android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:text="@string/goal" />
 
+            <!--Left Foul Button-->
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="54dp"
-                android:layout_marginTop="0dp"
+                style="@style/leftFoulButton"
                 android:onClick="foulForTeamA"
-                android:padding="5dp"
-                android:text="Foul"
-                android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:text="@string/foul" />
 
+            <!--Left Foul Text View-->
             <TextView
                 android:id="@+id/foulTeamA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="0"
-                android:textColor="@android:color/black"
-                android:textSize="28sp" />
+                style="@style/leftFoulTextView"
+                android:text="@string/_0" />
 
         </LinearLayout>
 
+        <!--Left Goal Text View-->
         <TextView
             android:id="@+id/scoreTeamA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="150dp"
-            android:fontFamily="sans-serif-condensed"
-            android:text="0"
-            android:textColor="@android:color/black"
-            android:textSize="28sp" />
+            style="@style/leftGoalTextView"
+            android:text="@string/_0" />
 
 
     </LinearLayout>
 
+    <!--Reset Button-->
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="@android:color/darker_gray"
+        style="@style/resetButton"
         android:onClick="resetScores"
-        android:padding="5dp"
-        android:text="RESET"
-        android:textSize="20sp" />
+        android:text="@string/reset" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:orientation="horizontal">
+    <!--Right Container Layout-->
+    <LinearLayout style="@style/rightContainerLinearLayout">
 
-
+        <!--Right Goal Text View-->
         <TextView
             android:id="@+id/scoreTeamB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="18dp"
-            android:layout_marginTop="150dp"
-            android:fontFamily="sans-serif-condensed"
-            android:text="0"
-            android:textColor="@android:color/black"
-            android:textSize="28sp" />
+            style="@style/rightGoalTextView"
+            android:text="@string/_0" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <!--Right Inner Layout-->
+        <LinearLayout style="@style/rightInnerLinearLayout">
 
-
+            <!--Right Team Name Text View-->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="60dp"
-                android:layout_marginTop="50dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Team B"
-                android:textColor="@android:color/black"
-                android:textSize="28sp" />
+                style="@style/rightTeamNameTextView"
+                android:text="@string/team_b" />
 
+            <!--Right Goal Button-->
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="0dp"
-                android:layout_marginTop="58dp"
+                style="@style/rightGoalButton"
                 android:onClick="goalForTeamA"
-                android:padding="5dp"
-                android:text="Goal"
-                android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:text="@string/goal" />
 
+            <!--Right Foul Button-->
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="54dp"
-                android:layout_marginTop="0dp"
+                style="@style/rightFoulButton"
                 android:onClick="foulForTeamB"
-                android:padding="5dp"
-                android:text="Foul"
-                android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:text="@string/foul" />
 
+            <!--Right Foul Text View-->
             <TextView
                 android:id="@+id/foulTeamB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="0"
-                android:textColor="@android:color/black"
-                android:textSize="28sp" />
+                style="@style/rightFoulTextView"
+                android:text="@string/_0" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

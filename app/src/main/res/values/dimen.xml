@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Left Team Name Text View-->
+    <dimen name="leftTeamNameTextView_Layout_marginLeft">60dp</dimen>
+    <dimen name="leftTeamNameTextView_Layout_marginStart">60dp</dimen>
+    <dimen name="leftTeamNameTextView_Layout_marginTop">50dp</dimen>
+    <dimen name="leftTeamNameTextView_textSize">28sp</dimen>
+
+    <!--Left Goal Button-->
+    <dimen name="leftGoalButton_Layout_marginLeft">54dp</dimen>
+    <dimen name="leftGoalButton_Layout_marginTop">58dp</dimen>
+    <dimen name="leftGoalButton_padding">5dp</dimen>
+    <dimen name="leftGoalButton_textSize">20sp</dimen>
+
+    <!--Left Foul Button-->
+    <dimen name="leftFoulButton_Layout_marginLeft">54dp</dimen>
+    <dimen name="leftFoulButton_Layout_marginTop">0dp</dimen>
+    <dimen name="leftFoulButton_padding">5dp</dimen>
+    <dimen name="leftFoulButton_textSize">20sp</dimen>
+
+    <!--Left Foul Text View-->
+    <dimen name="leftFoulTextView_Layout_marginLeft">90dp</dimen>
+    <dimen name="leftFoulTextview_textSize">28sp</dimen>
+
+    <!--Left Goal Text View-->
+    <dimen name="leftGoalTextView_Layout_marginLeft">18dp</dimen>
+    <dimen name="leftGoalTextView_Layout_marginTop">150dp</dimen>
+    <dimen name="leftGoalTextview_textSize">28sp</dimen>
+
+    <!--Reset Button-->
+    <dimen name="resetButton_padding">5dp</dimen>
+    <dimen name="resetButton_textSize">20sp</dimen>
+
+
+    <!--Right Team Name Text View-->
+    <dimen name="rightTeamNameTextView_Layout_marginRight">60dp</dimen>
+    <dimen name="rightTeamNameTextView_Layout_marginTop">50dp</dimen>
+    <dimen name="rightTeamNameTextView_textSize">28sp</dimen>
+
+    <!--Right Goal Button-->
+    <dimen name="rightGoalButton_Layout_marginRight">0dp</dimen>
+    <dimen name="rightGoalButton_Layout_marginTop">58dp</dimen>
+    <dimen name="rightGoalButton_padding">5dp</dimen>
+    <dimen name="rightGoalButton_textSize">20sp</dimen>
+
+    <!--Right Foul Button-->
+    <dimen name="rightFoulButton_Layout_marginRight">54dp</dimen>
+    <dimen name="rightFoulButton_Layout_marginTop">0dp</dimen>
+    <dimen name="rightFoulButton_padding">5dp</dimen>
+    <dimen name="rightFoulButton_textSize">20sp</dimen>
+
+    <!--Right Foul Text View-->
+    <dimen name="rightFoulTextView_Layout_marginLeft">35dp</dimen>
+    <dimen name="rightFoulTextview_textSize">28sp</dimen>
+
+    <!--Right Goal Text View-->
+    <dimen name="rightGoalTextView_Layout_marginRight">18dp</dimen>
+    <dimen name="rightGoalTextView_Layout_marginTop">150dp</dimen>
+    <dimen name="rightGoalTextview_textSize">28sp</dimen>
+
+</resources>
